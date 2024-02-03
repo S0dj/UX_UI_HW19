@@ -111,6 +111,14 @@
     margin:10px;
     grid-area: mySkills;
 }
+
+.title{
+    font-family: 'Roboto Slab', 'slab-serif';
+    font-size: 3em;
+    padding-top: 10%;
+    text-align: center;
+}
+
 .h1{
     font-family: 'Roboto Slab', 'slab-serif';
     font-size: 3em;
@@ -139,6 +147,10 @@
 .image{
     width:100%;
     height:auto;
+}
+
+a:link{
+    text-decoration: none;
 }
 
 

@@ -129,8 +129,8 @@
     display:grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    "mySkills mySkills"
-    "gridContainer gridContainer";
+    'mySkills mySkills'
+    'gridContainer gridContainer';
 }
 
 .mySkills{

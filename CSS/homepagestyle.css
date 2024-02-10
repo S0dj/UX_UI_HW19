@@ -23,12 +23,61 @@
     vertical-align: middle;
 }
 
-.title{
-    font-family: 'Roboto Slab', 'slab-serif';
-    font-size: 3em;
-    padding-top: 1%;
-    text-align: center;
+/*text*/
+.h2{
+    font-family: 'Georgia', 'times', 'serif';
+    font-size: 2em;
 }
+
+.p{
+    font-family: 'Catamaran', 'sans-serif';
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/*main page*/
+.heroImg{
+    height: 600px;
+    padding:10px;
+    grid-area: heroImage;
+}
+
+.item2 {grid-area: heroText;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    font-family: 'Roboto Slab', 'slab-serif';
+    color: white;
+    background-color: #662D91;
+    height: 80px;
+    width:fit-content;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    grid-area: download;
+}
+
+.homeContent {
+  display: grid;
+  grid-template-areas:
+    'heroImage heroText'
+    'heroImage heroText'
+    'heroImage download';
+  gap: 30px;
+  padding: 30px;
+}
+
+.homeContent > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
 
 /*navbar item*/
 .navItem{
@@ -45,8 +94,24 @@
     color:#00a79d;
 }
 
+.title{
+    font-family: 'Roboto Slab', 'slab-serif';
+    font-size: 3em;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.image{
+    width:100%;
+    height:auto;
+    padding: 10px;
+}
 
 
+
+a:link{
+    text-decoration: none;
+}
 
 /*dropdown*/
 .dropbtn{
@@ -98,107 +163,6 @@
 
 
 
-/*body*/
-.main{
-    display: flex;
-    flex-direction: column;
-    margin-right: 10%;
-    margin-left:10%;
-    margin-bottom: 5%;
-}
-
-.homeContent{
-    display: grid;
-    grid-template-areas: 
-    'heroImage homep';
-}
-
-.homep{
-    font-family: 'Catamaran', 'sans-serif';
-    font-size: 1em;
-    grid-area: homep;
-}
-
-.heroImg{
-    height: 600px;
-    padding:10px;
-    grid-area: heroImage;
-}
-
-.content{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "mySkills mySkills"
-    "gridContainer gridContainer";
-}
-
-.mySkills{
-    margin:10px;
-    grid-area: mySkills;
-}
-
-
-
-.h1{
-    font-family: 'Roboto Slab', 'slab-serif';
-    font-size: 3em;
-}
-
-.h2{
-    font-family: 'Georgia', 'times', 'serif';
-    font-size: 2em;
-}
-
-.p{
-    font-family: 'Catamaran', 'sans-serif';
-    font-size: 1.5rem;
-}
-
-.gridContainer{
-    display: grid;
-    margin-left: 10px;
-    grid-area: gridContainer;
-}
-
-.flexBox{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-size: 1.5rem;
-
-}
-
-.image{
-    width:100%;
-    height:auto;
-    padding: 10px;
-}
-
-.heroImg{
-    height: 600px;
-    padding:10px;
-    grid-area: heroImage;
-}
-
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16pt;
-    font-family: 'Roboto Slab', 'slab-serif';
-    color: white;
-    background-color: #662D91;
-    height: 80px;
-    width:fit-content;
-    text-decoration: none;
-    padding: 10px;
-    margin: 20px;
-}
-
-a:link{
-    text-decoration: none;
-}
 
 
 /*footer*/
